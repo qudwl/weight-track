@@ -12,4 +12,4 @@ A weight tracking app written in React, and uses localStorage to save the weight
 
 Home | Add | Calendar
 ----|----|----
-![Home](mockup/home.png)|![Add](mockup/add.png)|![Calendar](mockup/calendar.png)
+![Home](mockup/Home.png)|![Add](mockup/Add.png)|![Calendar](mockup/Calendar.png)
