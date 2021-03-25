@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Record } from './icons/icons';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Weight Tracker</h1>
+      <div className="chart">
+        <p>68.9kgs</p>
+      </div>
+      <div className="buttonRow">
+        <div className="button">
+          <img src={Record} alt="record" width="80" color="#fca311" />
+        </div>
+        <div className="button" />
+      </div>
     </div>
   );
 }
