@@ -8,6 +8,15 @@
   height: 250px;
   border-radius: 20px;
   box-shadow: 0px 0px 10px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart > p {
+  text-align: right;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .buttonRow {
@@ -21,6 +30,10 @@
   border: 5px solid #425b91;
   width: 50%;
   height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .button:first-of-type {
   margin-right: 20px;

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Record } from './icons/icons';
+import Record from './icons/record.svg';
+import CalendarWhite from './icons/calendarWhite.svg';
 import './App.css';
 
 function App() {
@@ -11,9 +12,13 @@ function App() {
       </div>
       <div className="buttonRow">
         <div className="button">
-          <img src={Record} alt="record" width="80" color="#fca311" />
+          <img src={Record} alt="record" width="80" />
+          <h3>Record</h3>
         </div>
-        <div className="button" />
+        <div className="button">
+          <img src={CalendarWhite} alt="calendar" width="80" />
+          <h3>Calendar</h3>
+        </div>
       </div>
     </div>
   );
