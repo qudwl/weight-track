@@ -1,6 +1,8 @@
 .App {
-  margin: 10px;
+  padding: 10px;
   color: white;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .chart {
@@ -28,13 +30,11 @@
 .button {
   border-radius: 20px;
   border: 5px solid #425b91;
-  width: 50%;
+  width: 42vw;
   height: 170px;
+  max-width: 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.button:first-of-type {
-  margin-right: 20px;
 }
