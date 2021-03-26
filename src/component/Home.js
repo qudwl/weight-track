@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <>
       <h1>Weight Tracker</h1>
-      <div className="chart">
+      <div className="largeBox chart">
         <p>68.9kgs</p>
         <XYPlot width={350} height={200}>
           <LineSeries
