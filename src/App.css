@@ -1,5 +1,4 @@
 .App {
-  padding: 10px;
   color: white;
   box-sizing: border-box;
   width: 100%;
@@ -18,7 +17,7 @@
 }
 
 .recordBox {
-  background-color: #14213d;
+  background-color: black;
   justify-content: center;
   align-items: center;
 }
@@ -47,6 +46,9 @@
   justify-content: center;
   align-items: center;
 }
+.button:focus {
+  outline: none;
+}
 
 .recordInputs {
   display: flex;
@@ -60,10 +62,12 @@
   background: none;
   border: none;
   color: white;
-  border-bottom: 5px solid #14213d;
+  border-bottom: 5px solid black;
   text-align: center;
   font-size: 2em;
   font-weight: bold;
+  width: 80vw;
+  padding-bottom: 10px;
 }
 
 .inputWeight:focus {
@@ -75,10 +79,101 @@
   border: none;
   width: 100px;
   height: 100px;
-  background: #14213d;
+  background: black;
   border-radius: 50px;
 }
 
 .inputButton:focus {
   outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:active,
+a:focus,
+a:hover,
+a:clicked {
+  color: inherit;
+}
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  height: 95vh;
+  width: 100vw;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #14213d;
+  border-radius: 30px 30px 0 0;
+  transition: transform ease-in-out 300ms;
+}
+.page {
+  padding: 10px;
+  transition: transform ease-in-out 300ms;
+}
+
+.calendarBox {
+  height: 50vh;
+  background-color: #fca311;
+}
+
+.dateBox {
+  display: flex;
+  background-color: #e29c29;
+  width: 40%;
+  margin: 10px;
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+.dateBox > h3 {
+  margin: 0px;
+  color: black;
+}
+.dateRow {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+.date > h5,
+.date > p {
+  margin: 0px;
+  text-align: center;
+}
+
+.date {
+  background-color: #ffb132;
+  border-radius: 7px;
+  padding: 7px;
+}
+
+.close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stats {
+  display: flex;
+  justify-content: space-around;
+}
+.statBox {
+  text-align: center;
+}
+h6 {
+  font-weight: lighter;
+  font-size: 1em;
+}
+.statBox > p {
+  font-size: 1.5em;
+}
+.close .inputButton {
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+}
+.close .inputButton img {
+  width: 25px;
 }
