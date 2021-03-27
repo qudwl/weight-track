@@ -124,7 +124,6 @@ a:clicked {
 .dateBox {
   display: flex;
   background-color: #e29c29;
-  width: 40%;
   margin: 10px;
   padding: 20px 10px;
   border-radius: 20px;
@@ -132,6 +131,7 @@ a:clicked {
 .dateBox > h3 {
   margin: 0px;
   color: black;
+  display: inline;
 }
 .dateRow {
   display: flex;

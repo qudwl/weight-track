@@ -8,33 +8,19 @@ import CalendarWhite from '../icons/calendarWhite.svg';
 import '../../node_modules/react-vis/dist/style.css';
 
 const data = [
-  [
-    { x: 0, y: 9 },
-    { x: 1, y: 8.5 },
-    { x: 2, y: 8 },
-    { x: 3, y: 7.5 },
-    { x: 4, y: 7 },
-    { x: 5, y: 7 },
-    { x: 6, y: 8 },
-    { x: 7, y: 6.5 },
-    { x: 8, y: 6 },
-    { x: 9, y: 5 },
-  ],
-  [
-    { x: 0, y: 1 },
-    { x: 1, y: 2 },
-    { x: 2, y: 8 },
-    { x: 3, y: 6 },
-    { x: 4, y: 5 },
-    { x: 5, y: 2 },
-    { x: 6, y: 9 },
-    { x: 7, y: 1 },
-    { x: 8, y: 2 },
-    { x: 9, y: 3 },
-  ],
+  { x: 0, y: 9 },
+  { x: 1, y: 8.5 },
+  { x: 2, y: 8 },
+  { x: 3, y: 7.5 },
+  { x: 4, y: 7 },
+  { x: 5, y: 7 },
+  { x: 6, y: 8 },
+  { x: 7, y: 6.5 },
+  { x: 8, y: 6 },
+  { x: 9, y: 5 },
 ];
 
-const Home = ({ visible, showRecord, showCalendar }) => {
+const Home = ({ visible, showRecord, showCalendar, curWeight }) => {
   const [classes, setClasses] = useState('page');
   useEffect(() => {
     if (visible) {
@@ -50,10 +36,10 @@ const Home = ({ visible, showRecord, showCalendar }) => {
     <div className={classes}>
       <h1>Weight Tracker</h1>
       <div className="largeBox chart">
-        <p>68.9kgs</p>
+        <p>{curWeight === 0 ? `${curWeight}kgs` : 'Enter a weight'}</p>
         <XYPlot width={350} height={200}>
           <LineSeries
-            data={data[0]}
+            data={data}
             strokeWidth={8}
             color="white"
             animation
@@ -97,11 +83,13 @@ Home.propTypes = {
   showRecord: PropTypes.func,
   showCalendar: PropTypes.func,
   visible: PropTypes.bool,
+  curWeight: PropTypes.number,
 };
 Home.defaultProps = {
   showRecord: () => {},
   showCalendar: () => {},
   visible: false,
+  curWeight: 0,
 };
 
 export default Home;

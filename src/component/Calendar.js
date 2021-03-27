@@ -9,7 +9,7 @@ const Calendar = ({ show }) => {
       <h2 style={{ textAlign: 'center' }}>Calendar</h2>
       <div className="largeBox calendarBox">
         <div className="dateBox">
-          <h3>June 4th, 2021</h3>
+          <h3>June 2021</h3>
         </div>
         <div className="dateRow">
           <div className="date">
@@ -147,7 +147,11 @@ const Calendar = ({ show }) => {
         </div>
       </div>
       <div className="close">
-        <button type="button" onClick={show} className="inputButton">
+        <button
+          type="button"
+          onClick={() => show(false)}
+          className="inputButton"
+        >
           <img src={Check} alt="close" />
         </button>
       </div>
