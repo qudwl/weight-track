@@ -7,7 +7,7 @@ A weight tracking app written in React, and uses localStorage to save the weight
 ## Plans
 
 - [x] Create a mockup
-- [ ] Create the ui
+- [x] Create the ui
 - [ ] Add functionality
 - [ ] Maybe add ways to store online?
 
